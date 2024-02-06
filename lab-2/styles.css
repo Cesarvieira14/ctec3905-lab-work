@@ -1,0 +1,26 @@
+
+  section {
+    overflow:auto;
+  }
+
+ 
+nav {
+    display: flex;
+    background-color: black;
+    font-family: fantasy;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  nav a {
+    background-color:lavender;
+    color: chocolate;
+    padding: 10pt;
+    margin: 5pt;
+    text-decoration-color: darkmagenta; 
+    /* try different values - e.g. 3s */
+    transition: background-color 1.1s; 
+}
+nav a:hover {
+    background-color: aquamarine;
+  }

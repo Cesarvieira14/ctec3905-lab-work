@@ -1,0 +1,1109 @@
+<html lang="en"><head>
+    <!-- Why hello, view-sourcerer! -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  <meta name="description" content="Addy Osmani is a Software Engineer at Google working on the Chrome web browser. He is the author of books like Image Optimization and Learning JavaScript Design Patterns. He has also written a number of open-source projects like Yeoman, TodoMVC, Quicklink and Material Design Lite.">
+  <meta name="author" content="Addy Osmani">
+  <meta name="twitter:creator" content="@addyosmani">
+  <meta name="twitter:url" content="https://addyosmani.com/">
+  <meta name="twitter:site" content="@addyosmani">
+  <meta name="twitter:description" content="Addy Osmani is a Software Engineer at Google working on the Chrome web browser. He is the author of books like Image Optimization and Learning JavaScript Design Patterns. He has also written a number of open-source projects like Yeoman, TodoMVC, Quicklink and Material Design Lite.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="">
+  
+  <meta property="og:image" content="https://res.cloudinary.com/ddxwdqwkr/image/upload/w_1600,h_836,q_100/l_text:Karla_72_bold:,co_rgb:ffe4e6,c_fit,w_1400,h_240/fl_layer_apply,g_south_west,x_100,y_180/l_text:Karla_48:addyosmani.com%2520%25C2%25B7%2520,co_rgb:ffe4e680,c_fit,w_1400/fl_layer_apply,g_south_west,x_100,y_100/l_twitter_name:addyosmani/c_thumb,g_face,r_max,w_380,h_380,q_100/fl_layer_apply,w_140,g_north_west,x_100,y_100/v1681336739/addy/grain-gradient.png">
+  <meta name="twitter:image" content="https://res.cloudinary.com/ddxwdqwkr/image/upload/w_1600,h_836,q_100/l_text:Karla_72_bold:,co_rgb:ffe4e6,c_fit,w_1400,h_240/fl_layer_apply,g_south_west,x_100,y_180/l_text:Karla_48:addyosmani.com%2520%25C2%25B7%2520,co_rgb:ffe4e680,c_fit,w_1400/fl_layer_apply,g_south_west,x_100,y_100/l_twitter_name:addyosmani/c_thumb,g_face,r_max,w_380,h_380,q_100/fl_layer_apply,w_140,g_north_west,x_100,y_100/v1681336739/addy/grain-gradient.png">
+  <meta name="twitter:image:src" content="https://res.cloudinary.com/ddxwdqwkr/image/upload/w_1600,h_836,q_100/l_text:Karla_72_bold:,co_rgb:ffe4e6,c_fit,w_1400,h_240/fl_layer_apply,g_south_west,x_100,y_180/l_text:Karla_48:addyosmani.com%2520%25C2%25B7%2520,co_rgb:ffe4e680,c_fit,w_1400/fl_layer_apply,g_south_west,x_100,y_100/l_twitter_name:addyosmani/c_thumb,g_face,r_max,w_380,h_380,q_100/fl_layer_apply,w_140,g_north_west,x_100,y_100/v1681336739/addy/grain-gradient.png">
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="Addy Osmani is a Software Engineer at Google working on the Chrome web browser. He is the author of books like Image Optimization and Learning JavaScript Design Patterns. He has also written a number of open-source projects like Yeoman, TodoMVC, Quicklink and Material Design Lite.">
+  
+
+
+  <link rel="alternate" type="application/rss+xml" title="AddyOsmani.com RSS Feed" href="http://addyosmani.com/rss.xml">
+
+  <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-QLSQW43X99&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Addy Osmani",
+      "url": "https://addyosmani.com",
+      "image": "https://addyosmani.com/assets/photos/Addy2021.jpg",
+      "sameAs": [
+        "https://twitter.com/addyosmani",
+        "https://www.instagram.com/addyist",
+        "https://www.linkedin.com/in/osmani/",
+        "https://www.youtube.com/addyosmani",
+        "https://github.com/addyosmani/",
+        "https://addyosmani.com",
+        "https://www.facebook.com/addyosmaniofficial/",
+        "https://golden.com/wiki/Addy_Osmani_(software_engineer)-REKEB86",
+        "https://www.oreilly.com/pub/au/5271",
+        "https://web.dev/authors/addyosmani/"
+      ],
+      "jobTitle": "Software Engineer, Author",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Google"
+      }  
+    }
+    </script>
+  <title>AddyOsmani.com</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#eb298c">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
+</head>
+<body>
+
+  <style>
+@media only screen and (max-width: 700px) {
+    .mobile-hidden {
+        display:none;
+    }
+}
+</style>
+<nav class="main-nav">
+    
+
+    
+    
+    
+
+    <a class="mobile-hidden" href="https://github.com/addyosmani">GitHub </a>
+
+    <a class="mobile-hidden" href="/press">Press </a>
+
+    <a class="mobile-hidden" href="/bio">Biography </a>
+
+    <!-- <a href="https://www.youtube.com/playlist?list=PLVUliVBcvz1lKS9-rcPFFXkwGOj_YX_-5">Talks</a> -->
+    <!-- <a rel="me" class="mobile-hidden" href="https://indieweb.social/@addyosmani">Mastodon</a> -->
+    <a rel="me" class="mobile-hidden" href="https://www.linkedin.com/posts/addyosmani_softwareengineering-productivity-activity-6981270958401609728-C3Te?utm_source=share&amp;utm_medium=member_desktop">LinkedIn</a>
+
+    <a href="https://twitter.com/addyosmani">Twitter </a>
+
+    <!-- <a class="mobile-hidden" href="/feed.xml">Subscribe</a> -->
+    <a class="mobile-hidden" style="font-weight:bold;" href="https://addyo.substack.com">Newsletter</a>
+
+    <a target="_blank" href="https://teejungle.net/">Shop </a>
+
+    <a class="cta" href="/blog">Blog </a>
+
+</nav>
+
+  
+      
+
+<!-- Temporary until I inline fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Addy Osmani",
+      "url": "https://addyosmani.com",
+      "image": "https://addyosmani.com/assets/photos/Addy2021.jpg",
+      "sameAs": [
+        "https://twitter.com/addyosmani",
+        "https://www.instagram.com/addyist",
+        "https://www.linkedin.com/in/osmani/",
+        "https://www.youtube.com/addyosmani",
+        "https://github.com/addyosmani/",
+        "https://addyosmani.com",
+        "https://www.facebook.com/addyosmaniofficial/",
+        "https://golden.com/wiki/Addy_Osmani_(software_engineer)-REKEB86",
+        "https://www.oreilly.com/pub/au/5271",
+        "https://web.dev/authors/addyosmani/"
+      ],
+      "jobTitle": "Software Engineer, Author",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Google"
+      }  
+    }
+    </script>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap&text=AddyOsmaniBooks" rel="stylesheet"> -->
+<style id="fonts-inter">
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZtrib2Ai-7mdXDPVuYuRg1S3kZdAQ&skey=c491285d6722e4fa&v=v8) format('woff');
+}
+</style>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {  
+  display: grid;
+  /* grid-template-columns: 75% 25%; */
+  grid-template-columns: 70% 30%;
+  /* grid-template-columns: 2fr 1fr; */ /*was default*/
+  /* grid-template-rows: 1.8fr; */
+  gap: 0px 0px;
+  /* grid-auto-flow: row; */
+  /* grid-template-areas: */
+}
+
+nav.main-nav a.cta:hover {
+    background:#4487be;
+}
+
+.text-container {
+    background: #000;
+    padding-left: 80px; /*31px*/
+}
+.image-container {
+    background: #000;
+}
+
+.image-container .image-text {
+    opacity: 0.86;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    margin-top: -80px;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+.image-text {
+    color: white;
+    line-height: 120%;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.image-text a {
+    color: #FEED73;
+}
+
+.author-container {
+    padding-top: 4px;
+    color: white;
+}
+
+.author-container .author {
+    /* font-size: 2em; */
+    /* font-family: Inter-Regular_Black; */
+    font-family: 'Inter', sans-serif;
+    font-size: 6rem;
+    color: #FFFFFF;
+    letter-spacing: -4.48px;
+    line-height: 102px;
+}
+
+.author-container .role, .text-subtitle {
+    opacity: 0.64;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    letter-spacing: -0.51px;
+    margin-top: 4px;
+}
+
+.books-container,
+.studies-container {
+    margin-top: 40px;
+    /* overflow-x: scroll; 1-row scroller */
+    width: 90%; 
+    /* width: 645px; */
+}
+
+.books-container {
+    height: 500px;
+}
+
+.books-container h3,
+.studies-container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.64;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    letter-spacing: -0.51px;
+    margin-top: 4px;
+}
+
+.books,
+.studies {
+    display: grid;
+    justify-content: center;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    align-content: center;
+    grid-gap: 10px;
+    /* margin-left: -8px; */
+    float: left;
+    /* grid-template: repeat(2, 1fr) / repeat(2, 1fr); */
+
+    /* Switch from single row to 2 row */
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: row;
+}
+
+
+.books img,
+.studies img {
+    max-width: 119px;
+    max-height: 185px;
+    object-fit: contain;
+}
+
+.studies h2,
+.books h2 {
+    color: white;
+    opacity: 0.64;
+    font: 0.7rem "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 4px;
+    margin-top: 6px;
+}
+
+.studies h2 {
+    color: black;
+}
+
+figure.thumb {
+    margin: 10px;
+    webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+figure.thumb .author {
+    display:none;
+}
+
+figure.thumb img:hover {
+    outline: 5px solid #4361b3;
+}
+
+
+
+.image-container img {
+  /*  To contain the image to the confines of the div  */
+  max-width: 100%;
+}
+
+
+.hero-image {
+  max-width: 100%; 
+  /* width: 800px; */
+  margin: auto;
+}
+
+.hero-image::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.00) 6%, #000 106%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+}
+
+@media only screen and (max-width: 1100px) {
+/* Change columns so that photo is the main thing you see*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.text-container {
+    padding-left: 21px; /*31px*/
+}
+
+figure h2 {
+    /* display: none; */
+}
+
+.books-container,
+.studies-container {
+    margin-top: 40px;
+    /* overflow-x: scroll; */
+    width: 95%;
+    display: inline-grid;
+}
+
+.books-container {
+    height: 500px;
+}
+
+.books,
+.studies {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-flow: column;
+    align-content: center;
+    grid-gap: 10px;
+    /* margin-left: -8px; */
+    /* width: max-content; */
+    float: left;
+    /* grid-template: repeat(2, 1fr) / repeat(2, 1fr); */
+    grid-template-columns: 160px 160px 160px 160px;
+    /* grid-template-columns: minmax(0, 1fr) 300px; */
+    min-width: 0;
+
+    /* multi-row experience */
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: row;
+}
+
+.author-container {
+    padding-top: 54px;
+}
+
+.author-container .author {
+    font-size: 5rem;
+    letter-spacing: -4.48px;
+    line-height: 79px;
+}
+
+}
+</style>
+
+<style>
+.header-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #151719;
+    height: 416px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header-wrapper img {
+    object-fit: contain;
+    object-position: top;
+    aspect-ratio: 16 / 9;
+    height: 100%;
+}
+
+h3 {
+    /* font-size: 2rem; */
+    font-weight: 600;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -.02em;
+}
+
+nav.main-nav {
+    padding: 20px 20px 0;
+    background: #000;
+    margin: 0 auto;
+    text-align: right;
+    z-index: 100;
+    height: 60px;
+}
+  
+  .profile #wrapper {
+    padding: 60px 0px 0px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+nav.main-nav a {
+    top: 8px;
+    right: 6px;
+    padding: 8px 12px;
+    color: #D9E3EA;
+    font-size: 13px;
+    /* font-weight: bold; */
+    line-height: 1.35;
+    border-radius: 3px;
+}
+
+    .header-wrapper img:hover {
+        /* transform: scale(1.5); */
+    }
+    @media only screen and (max-width: 900px) {
+        .header-wrapper img {
+            object-position: bottom;
+        }
+        .header-wrapper {
+            max-height: 200px;
+        }
+        nav.main-nav {
+            padding: 20px 11px 0;
+        }
+        .profile #wrapper {
+            padding: 0px 0px 0px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .books-container {
+            height: 900px
+        }
+
+        .books, .studies {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .books img, .studies img {
+            max-width: 119px;
+            max-height: 150px;
+            object-fit: contain;
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        nav > a:nth-child(1) {
+            display: none;
+        }
+    }
+
+#footer {
+    margin-top: 50px;
+}
+</style>
+    
+<div class="container">
+    <div class="text-container">
+
+        <div class="author-container">
+            <h1 class="author">Addy Osmani</h1>
+            <div class="role">Engineering leader and senior thinker</div>
+            <div itemscope="" itemtype="https://schema.org/Person" class="image-text">
+                <span itemprop="name">Addy Osmani</span> is an <span itemprop="nationality">Irish</span> <a itemprop="jobTitle" href="https://www.linkedin.com/in/osmani/">Software Engineer</a> and leader 
+                currently working on the <a itemprop="worksFor" href="https://www.google.com/chrome/">Google Chrome</a> web 
+                browser. He has <a href="https://addyosmani.com/bio/">worked</a> at Google for over eleven years, 
+                focused on <a href="https://blog.chromium.org/2018/09/10-years-of-speed-in-chrome_11.html">making the web fast</a> and better for users and web developers. He <a href="https://golden.com/wiki/Addy_Osmani_(software_engineer)-REKEB86">previously</a>
+                worked at AOL and on Fortune 500 sites. Addy is the <a itemprop="author" href="https://g.co/kgs/t9AVE7">author</a> of
+                a number of <a href="https://store.addy.ie">books</a> including 
+                <a itemscope="" itemtype="https://schema.org/Book" href="https://www.oreilly.com/library/view/learning-javascript-design/9781449334840/"><span itemprop="title" "="">Learning JavaScript Design Patterns</span></a>,
+                <a href="https://patterns.dev">Learning Patterns</a>, <a href="https://stoic.im">Stoic Mind</a>
+                and <a itemscope="" itemtype="https://schema.org/Book" href="https://www.smashingmagazine.com/printed-books/image-optimization/"><span itemprop="title" "="">Image Optimization</span></a>. You can find him on <a href="https://www.linkedin.com/in/addyosmani">LinkedIn</a>, <a href="https://twitter.com/addyosmani">Twitter</a> or <a href="https://tiktok.com/@addyosmani">TikTok</a>. He's given over 170 <a href="https://www.youtube.com/playlist?list=PLVUliVBcvz1lKS9-rcPFFXkwGOj_YX_-5">talks</a> worldwide. 
+            </div>
+        </div>
+
+        <!-- Featured books -->
+        <div class="books-container">
+    <h3>Books</h3>
+    
+        <div class="books">
+
+
+          <figure class="thumb">
+            <div class="cover">
+            <a target="_blank" href="https://patterns.addy.ie">
+                <img alt="Do you want to write beautiful, structured, and maintainable JavaScript by applying modern design patterns to the language? Do you want clean, efficient, manageable code? Want to stay up-to-date with the latest best practices? If so, the updated second edition of Learning JavaScript Design Patterns is the ideal place to start.
+
+                Author Addy Osmani shows you how to apply modern design patterns to JavaScript and React. That includes popular design patterns such as modules, mixins, observers, and mediators. You'll learn about performance and rendering patterns, such as server-side rendering and islands architecture. You'll also learn how modern architectural patterns—such as MVC, MVP, and MVVM—are useful from the perspective of a modern web application developer. Other essential topics include modern JavaScript syntax and React patterns such as Hooks, higher order components, and render props.
+                
+                " src="https://addyosmani.com/assets/images/jsdp2.webp" width="238px" height="370px" style="background-color:white;">
+           </a>
+            </div>
+            <h2>JS Patterns: 2nd Edition</h2>
+            <p class="author">by Addy Osmani</p>
+          </figure>
+
+
+
+              <figure class="thumb">
+                <div class="cover">
+                    <a target="_blank" href="https://patterns.dev">
+                    <picture>
+                         <img alt="Modern Web Apps - a guide to writing high-performance React web applications by Lydia Hallie and Addy Osmani" src="https://addyosmani.com/assets/images/book-lp.webp" width="400px" height="517px" style="background-color:white; object-fit: cover;">
+                    </picture>
+                </a>
+                </div>
+                <h2>Learning Patterns</h2>
+                <p class="author">by Lydia Hallie and Addy Osmani</p>
+              </figure>
+
+
+
+
+              <figure class="thumb">
+                <div class="cover">
+                <a target="_blank" href="https://www.smashingmagazine.com/printed-books/success-at-scale">
+                    <img alt="Success at Scale is a curated collection of best-practice case studies capturing how production sites of different sizes tackle performance, accessibility, capabilities, and developer experience at scale. Case studies are from industry experts with guidance that stands the test of time.
+                    " src="https://addyosmani.com/assets/images/successatscale.jpg" width="238px" height="370px" style="background-color: #26354A">
+               </a>
+                </div>
+                <h2>Success at Scale</h2>
+                <p class="author">by Addy Osmani</p>
+              </figure>
+
+              <figure class="thumb">
+                <div class="cover">
+                    <picture>
+                      <a href="https://www.amazon.com/Leading-Effective-Engineering-Teams-Contributors/dp/109814824X/ref=sr_1_1?crid=3QA4C9MEC1BBB&amp;keywords=leading+effective+engineering+teams+oreilly&amp;qid=1697656727&amp;sprefix=leading+effective+engineering+teams+oreilly%2Caps%2C132&amp;sr=8-1" target="_blank">
+                        <img alt="Leading Effective Engineering Teams - a book of growth tips for engineers, tech leads and managers by Addy Osmani" src="https://addyosmani.com/assets/images/leadeng.jpg" width="238px" height="370px" style="background-color:white;">
+                      </a>
+                    </picture>
+                </div>
+                
+                <h2>Effective Eng. Teams</h2>
+                <p class="author">by Addy Osmani</p>
+              </figure>
+
+              <figure class="thumb">
+                <div class="cover">
+                    <a target="_blank" href="https://dx.addy.ie">
+                    <picture>
+                        <img alt="Developer Experience" src="https://addyosmani.com/assets/images/dx-book.jpg" width="238px" height="370px" style="background-color:#000;">
+                    </picture>
+                </a>
+                </div>
+                  
+                <h2>Developer Experience</h2>
+                <p class="author">by Addy Osmani</p>
+              </figure>
+
+              <figure class="thumb">
+                <div class="cover">
+                    <a target="_blank" href="https://stoic.im">
+                    <picture>
+                        <img alt="The Stoic Mind: By Addy Osmani and GoLimitless" src="https://addyosmani.com/assets/images/book-stoic.webp" width="238px" height="370px" style="background-color:#000;">
+                    </picture>
+                </a>
+                </div>
+                  
+                <h2>The Stoic Mind</h2>
+                <p class="author">by Addy &amp; GoLimitless</p>
+              </figure>
+              
+
+              <figure class="thumb">
+                <div class="cover">
+                <a target="_blank" href="https://addyosmani.com/blog/software-engineering-soft-parts/">
+                    <img alt="In Software Engineering - The Soft Parts Addy Osmani shares lessons from his first 10 years at Google on the soft skills that can help engineers become effective and scale their effectiveness. This guidance should help junior, mid-career and even senior developers move forward, deal with changing technology, and navigate building non-trivial systems. Becoming a good engineer is about collecting experience. Each project, even small ones, is a chance to add new techniques and tools to your toolbox. Where this delivers even more value is when you can solve problems by pairing techniques learned on one project with tools learned working on another. This short book tries to capture what the soft skills are and how they can all add up.
+                    " src="https://addyosmani.com/assets/images/softeng-google.jpg" width="238px" height="370px" style="background-color:#000083;">
+               </a>
+                </div>
+                <h2>SoftEng - The Soft Parts</h2>
+                <p class="author">by Addy Osmani</p>
+              </figure>
+
+              <figure class="thumb">
+                <div class="cover">
+                    <a target="_blank" href="https://www.smashingmagazine.com/printed-books/image-optimization/">
+                    <picture>
+                        <img alt="Image Optimization by Addy Osmani. A Smashing Magazine title." src="https://addyosmani.com/assets/images/book-io.webp" width="238px" height="370px" style="background-color:#51BFE8;">
+                    </picture>
+                </a>
+                </div>
+                  
+                <h2>Image Optimization</h2>
+                <p class="author">by Addy Osmani</p>
+              </figure>
+              
+
+              <figure class="thumb">
+                <div class="cover">
+                <a target="_blank" href="https://www.oreilly.com/library/view/learning-javascript-design/9781449334840/">
+                    <img alt="Explore many popular design patterns, including Modules, Observers, Facades, and Mediators. Learn how modern architectural patterns—such as MVC, MVP, and MVVM—are useful from the perspective of a modern web application developer. This book also walks experienced JavaScript developers through modern module formats, how to namespace code effectively, and other essential topics." src="https://addyosmani.com/assets/images/book-jsdp.webp" width="238px" height="370px" style="background-color:white;">
+               </a>
+                </div>
+                <h2>JS Design Patterns</h2>
+                <p class="author">by Addy Osmani</p>
+              </figure>
+
+              <figure class="thumb">
+                <div class="cover">
+                <a target="_blank" href="https://14habits.com">
+                    <img alt="14 Habits of highly productive developers" src="https://addyosmani.com/assets/images/book-habits.webp" width="238px" height="370px" style="background-color:white;">
+               </a>
+                </div>
+                <h2>Featured: 14 Habits</h2>
+                <p class="author">by Zeno Rocha</p>
+              </figure>
+
+              <figure class="thumb">
+                <div class="cover">
+                <a target="_blank" href="https://shop.smashingmagazine.com/products/smashing-book-4-ebooks">
+                    <img alt="New perspectives on web design" src="https://addyosmani.com/assets/images/book-responsive.webp" width="238px" height="370px" style="background-color:white;">
+               </a>
+                </div>
+                <h2>Featured: SM Book 4</h2>
+                <p class="author">by Addy Osmani</p>
+              </figure>
+
+              <figure class="thumb">
+                <div class="cover">
+                <a target="_blank" href="https://www.oreilly.com/library/view/developing-backbonejs-applications/9781449328535/">
+                    <img alt="Backbone Fundamentals" src="https://addyosmani.com/assets/images/book-backbone.webp" width="238px" height="370px" style="background-color:white;">
+               </a>
+                </div>
+                <h2>Backbone Applications</h2>
+                <p class="author">by Addy Osmani</p>
+              </figure>
+              
+        
+              <!-- <figure class="thumb">
+                <div class="cover">
+                <picture>
+                    <source srcset="https://addyosmani.com/books/success-at-scale.avif" type="image/avif">
+                    <source srcset="https://addyosmani.com/books/success-at-scale.webp" type="image/webp">
+                    <source srcset="https://addyosmani.com/books/success-at-scale.jpg">
+                    <img alt="Success at scale - a book of technical production case studies from popular large sites by Addy Osmani and friends" src="https://addyosmani.com/books/success-at-scale.jpg" width="238px" height="370px" style="background-color:#F04639;">
+                </picture>
+                </div>
+                <h2>Success at Scale</h2>
+                <p class="author">by Addy Osmani and friends</p>
+              </figure> -->
+            </div>
+</div>
+
+
+
+        <!-- Case studies -->
+        <div class="studies-container">
+            <h3>Case Studies</h3>
+            
+<!--
+case studies
+https://web.dev/shopping-for-speed-on-ebay/
+https://medium.com/dev-channel/a-netflix-web-performance-case-study-c0bcde26a9d9
+https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0
+https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154
+https://medium.com/dev-channel/treebo-a-react-and-preact-progressive-web-app-performance-case-study-5e4f450d5299
+https://developers.google.com/web/showcase/2017/twitter
+-->
+
+                <div class="studies">
+                    <figure class="thumb">
+                        <div class="cover">
+                            <a target="_blank" href="https://medium.com/@addyosmani/shopping-for-speed-on-ebay-com-6229711d7573">
+                            <picture>
+                                <img alt="eBay logo." src="https://addyosmani.com/assets/images/ebay2.svg" width="auto" height="100px">
+                            </picture>
+                        </a>
+                        </div>
+                          
+                        <h2>eBay</h2>
+                        
+                      </figure>
+                      
+                      <figure class="thumb">
+                        <div class="cover">
+                            <a target="_blank" href="https://medium.com/dev-channel/a-netflix-web-performance-case-study-c0bcde26a9d9">
+                            <picture>
+                                 <img alt="Netflix" src="https://addyosmani.com/assets/images/netflix.svg" width="auto" height="100px">
+                            </picture>
+                        </a>
+                        </div>
+                        <h2>Netflix</h2>
+                      </figure>
+
+                      <figure class="thumb">
+                        <div class="cover">
+                        <a target="_blank" href="https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0">
+                            <img alt="Tinder" src="https://addyosmani.com/assets/images/tinder2.svg" width="auto" height="100px">
+                       </a>
+                        </div>
+                        <h2>Tinder</h2>
+                        
+                      </figure>
+
+                      <figure class="thumb">
+                        <div class="cover">
+                            <a href="https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154">
+                            <picture>
+                                <img alt="Pinterest" src="https://addyosmani.com/assets/images/pinterest2.svg" width="auto" height="100px">
+                            </picture>
+                        </a>
+                        </div>
+                        
+                        <h2>Pinterest</h2>
+                        
+                      </figure>
+
+                      <figure class="thumb">
+                        <div class="cover">
+                            <a href="https://medium.com/p/5e4f450d5299">
+                            <picture>
+                                <img alt="Treebo" src="https://addyosmani.com/assets/images/treebo.svg" width="auto" height="100px">
+                            </picture>
+                        </a>
+                        </div>
+                        
+                        <h2>Treebo</h2>
+                        
+                      </figure>
+
+                      <figure class="thumb">
+                        <div class="cover">
+                            <a href="https://medium.com/@addyosmani/building-a-better-web-a-faster-youtube-on-web-24b1dc03716">
+                            <picture>
+                                <img alt="YouTube" src="https://addyosmani.com/assets/images/youtube.svg" width="auto" height="100px">
+                            </picture>
+                        </a>
+                        </div>
+                        
+                        <h2>YouTube</h2>
+                        
+                      </figure>
+                      
+
+                      <figure class="thumb">
+                        <div class="cover">
+                            <a href="https://medium.com/@addyosmani/photoshop-is-now-on-the-web-38d70954365a">
+                            <picture>
+                                <img alt="Adobe" src="https://addyosmani.com/assets/images/adobe.svg" width="auto" height="100px">
+                            </picture>
+                        </a>
+                        </div>
+                        
+                        <h2>Adobe</h2>
+                        
+                      </figure>
+                
+                      <!-- <figure class="thumb">
+                        <div class="cover">
+                            <a href="https://developers.google.com/web/showcase/2017/twitter">
+                            <picture>
+                                <img alt="Twitter" src="https://addyosmani.com/assets/images/twitter.svg" width="auto" height="100px">
+                            </picture>
+                        </a>
+                        </div>
+                        
+                        <h2>Twitter</h2>
+                        
+                      </figure> -->
+
+                    </div>
+           
+        </div>
+
+    </div>
+
+    <!-- Featured hero image -->
+    <div class="image-container">
+        <div class="hero-image">
+            <picture>
+                <source srcset="/assets/images/IMG_6867.avif" type="image/avif">
+                <source srcset="/assets/images/IMG_6867.webp" type="image/webp">
+                <source srcset="/assets/images/IMG_6867.jpg">
+                <img alt="Pictured: Addy Osmani." src="/assets/images/IMG_6867.jpg" width="auto" height="80%">
+            </picture>
+        </div>
+
+    </div>
+</div>
+
+<div class="profile">
+    <section id="wrapper">
+        
+          <!-- don't show header-->
+        
+    </section>
+</div>
+
+
+  
+
+  <style>
+
+    .thoughts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .thoughts-item {
+        display: block;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .thoughts-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        background: #ccc;
+        aspect-ratio: 1/1;
+    }
+    
+    .thoughts-item img:hover {
+        outline: 5px solid #4361b3;
+    }
+    
+    .thoughts-item h3 {
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .more-thoughtss {
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .more-thoughtss a {
+        text-decoration: none;
+    }
+    
+    .more-thoughtss a:hover {
+        text-decoration: underline;
+    }
+    
+    </style>
+    <h2 class="section-title">Featured thoughts</h2>
+    <div class="thoughts-grid">
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:6981270958401609728?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6981270958401609728%29&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B0ogUFJiITRe4dLcKsc4%2FCQ%3D%3D" class="thoughts-item">
+            <img width="300" height="300" src="https://addyosmani.com/assets/images/homepage-critical.jpg" alt="thoughts Thumbnail" loading="lazy">
+            <h3>Critical Thinking is key</h3>
+        </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7000540911050907648?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7000540911050907648%29&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B0ogUFJiITRe4dLcKsc4%2FCQ%3D%3D" class="thoughts-item">
+            <img width="300" height="300" src="https://addyosmani.com/assets/images/homepage-team.jpg" alt="thoughts Thumbnail" loading="lazy">
+            <h3>Overcome team dysfunction</h3>
+        </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7044175826115846144?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7044175826115846144%29&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B0ogUFJiITRe4dLcKsc4%2FCQ%3D%3D" class="thoughts-item">
+            <img width="300" height="300" src="https://addyosmani.com/assets/images/homepage-subset.jpg" alt="thoughts Thumbnail" loading="lazy">
+            <h3>Work is a subset of life</h3>
+        </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:6996942888802598912/" class="thoughts-item">
+            <img width="300" height="300" src="https://addyosmani.com/assets/images/homepage-coach.jpg" alt="thoughts Thumbnail" loading="lazy">
+            <h3>Coach, mentor, sponsor</h3>
+        </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7018966411389661184/" class="thoughts-item">
+            <img width="300" height="300" src="https://addyosmani.com/assets/images/homepage-engineer.jpg" alt="thoughts Thumbnail" loading="lazy">
+            <h3>Effective engineers</h3>
+        </a>
+    </div>
+    <div class="more-thoughtss">
+        <p>Check out more of my thoughts on <a href="https://www.linkedin.com/in/addyosmani/" target="_blank">LinkedIn</a>.</p>
+    </div>
+
+  <section id="wrapper" class="home" style="">
+    <div class="about">
+
+
+  <ol class="list-view">
+
+    <li class="list-item">
+
+      <div class="list-header">
+        <div class="_bubble" style="background-image: url(assets/images/laptop-chrome.svg);"></div>
+      </div>
+      <div class="list-detail">
+        <div class="_title-block">
+          <h3>Current projects</h3>
+        </div>
+        <p class="_summary">I am the engineering lead for <a href="https://chrome.com">Google Chrome</a>'s Developer Experience organization. 
+          Our projects include 
+          <a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools</a>, 
+          <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a>, 
+          <a href="https://goo.gle/psi">PageSpeed Insights</a> and 
+          <a href="https://goo.gle/crux">Chrome User Experience Report</a>,
+          <a href="https://web.dev/aurora">Aurora</a> and 
+          <a href="https://www.slideshare.net/FelixArntz/the-wordpress-performance-team">WordPress Performance</a>.
+          We recently shipped <a href="https://twitter.com/addyosmani/status/1455936618439737346">User Flows for DevTools and Lighthouse!</a>. I also love <a href="https://addyosmani.com/tools">side-projects</a>.
+      </p></div>
+    </li>
+
+    <li class="list-item">
+      <div class="list-header">
+        <div class="_bubble" style="background-image: url(assets/images/1448501262_heart.svg);"></div>
+      </div>
+      <div class="list-detail">
+        <div class="_title-block">
+          <h3>Open-source</h3>
+        </div>
+        <p class="_summary">Projects I've contributed to include
+          <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>,
+          <a href="https://workboxjs.org">Workbox</a>,
+          <a href="https://github.com/GoogleChromeLabs/quicklink">Quicklink</a>,
+          <a href="https://guessjs.com">Guess.js</a>,
+          <a href="http://yeoman.io">Yeoman</a>, <a href="https:/hnpwa.com">HNPWA</a>,
+          <a href="http://todomvc.com">TodoMVC</a>,
+          <a href="https://github.com/addyosmani/critical">Critical</a> and
+          <a href="http://getmdl.io">Material Design Lite</a>. You can find more on <a href="https://github.com/addyosmani">GitHub</a>.</p>
+      </div>
+    </li>
+
+    <!-- <li class="list-item">
+      <div class="list-header">
+        <div class="_bubble" style="background-image: url(assets/images/pencil-js.svg);"></div>
+      </div>
+      <div class="list-detail">
+        <div class="_title-block">
+          <h3>Books I've written</h3>
+        </div>
+        <p class="_summary">My books include <a href="https://bit.ly/smashing-images">Image Optimization</a> (2021), <a href="https://patterns.dev">Learning Patterns</a> (2021) with Lydia Hallie, 
+          <a href="/resources/essentialjsdesignpatterns/book/index.html">Learning JavaScript
+            Design Patterns</a> and <a href="http://addyosmani.github.com/backbone-fundamentals">Backbone.js Apps</a>. I am working on <a href="https://addyosmani.com/books/">a few</a> other book projects in 2022: Efficient Engineering and Success at scale.
+        </p>
+      </div>
+    </li> -->
+    <li class="list-item">
+      <div class="list-header">
+        <div class="_bubble" style="background-image: url(assets/images/ttt.svg);"></div>
+      </div>
+      <div class="list-detail">
+        <div class="_title-block">
+          <h3>Podcasts</h3>
+        </div>
+        <p class="_summary">
+          I have been on a few different podcasts recently, including <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wb2Ryb2NrZXQubG9ncm9ja2V0LmNvbS9yc3M/episode/OWFkZTcyOWUtNjJlZi00NzU5LTllZGEtZWJkODM5NDYxMjdm?hl=en&amp;ved=2ahUKEwjr3dKaucb7AhV4HzQIHVcnDvcQjrkEegQICBAF&amp;ep=6">PodRocket</a>, <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9ndnR4VWlJZg/episode/MjhmMWMyNGYtZDNlOC00YjZhLWI4ZDEtNTgxZTQ2OWVkNDlh?hl=en&amp;ved=2ahUKEwjr3dKaucb7AhV4HzQIHVcnDvcQjrkEegQICBAI&amp;ep=6">Hanselminutes with Scott Hanselman</a>, <a href="https://dev.to/devdiscuss/s9e1-using-design-patterns-to-improve-how-you-architect-web-apps">DevDiscuss</a> and <a href="https://www.smashingmagazine.com/2021/06/smashing-podcast-episode-39/">Smashing Podcast</a>.
+          
+          <!-- I previously appeared on <a href="https://www.youtube.com/watch?v=i5R7giitymk">State Of The
+            Web</a> talking about the state of JavaScript. The last show I did was season 4 of <a
+            href="https://g.co/TotallyToolingTips">Totally Tooling
+            Tips</a> with Matt Gaunt. It has unicorns!. -->
+          </p>
+      </div>
+    </li>
+    <li class="list-item">
+      <div class="list-header">
+        <div class="_bubble" style="background-image: url(assets/images/luggage-js.svg);"></div>
+      </div>
+      <div class="list-detail">
+        <div class="_title-block">
+          <h3>Talks</h3>
+        </div>
+        <p class="_summary">
+          Recordings of my talks are on my <a href="https://www.youtube.com/watch?v=X9eRLElSW1c&amp;list=PLVUliVBcvz1lKS9-rcPFFXkwGOj_YX_-5">YouTube</a> channel. These include <a href="https://youtu.be/AQqFZ5t8uNc">Optimize the Core Web Vitals</a> and <a href="https://youtu.be/X9eRLElSW1c">Cost Of JavaScript</a>. You can find some of my slides on <a href="http://speakerdeck.com/addyosmani">SpeakerDeck</a>.
+          </p>
+      </div>
+    </li>
+    <li class="list-item">
+      <div class="list-header">
+        <div class="_bubble" style="background-image: url(assets/images/github-notebook.svg);"></div>
+      </div>
+      <div class="list-detail">
+        <div class="_title-block">
+          <h3>Blog</h3>
+        </div>
+        <p class="_summary">My latest blog posts can be found on my <a href="https://web.dev/authors/addyosmani">web.dev profile</a>. My last post on here was: 
+  <a href="/blog/effective-teams/">Effective Engineering Teams</a>
+
+</p>
+      </div>
+    </li>
+  </ol>
+</div>
+  </section>
+
+  <style>
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.video-item {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #ccc;
+    aspect-ratio: 16/9;
+}
+
+.video-item img:hover {
+    outline: 5px solid #4361b3;
+}
+
+.video-item h3 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.more-videos {
+    text-align: center;
+    padding: 1rem;
+}
+
+.more-videos a {
+    text-decoration: none;
+}
+
+.more-videos a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<h2 class="section-title">Featured Videos</h2>
+<div class="video-grid">
+    <a href="/talks/life-lessons/" class="video-item">
+        <img width="300" height="168" src="https://addyosmani.com/assets/images/homepage-life.jpg" alt="Video Thumbnail" loading="lazy">
+        <h3>Life Lessons</h3>
+    </a>
+    <a href="/talks/10-years/" class="video-item">
+        <img width="300" height="168" src="https://addyosmani.com/assets/images/homepage-10years.jpg" alt="Video Thumbnail" loading="lazy">
+        <h3>Effective Engineering Teams</h3>
+    </a>
+    <a href="https://www.youtube.com/watch?v=X9eRLElSW1c" class="video-item">
+        <img width="300" height="168" src="https://addyosmani.com/assets/images/homepage-costjs.jpg" alt="Video Thumbnail" loading="lazy">
+        <h3>Cost Of JavaScript</h3>
+    </a>
+</div>
+<div class="more-videos">
+    <p>Check out more of my videos on <a href="https://www.youtube.com/playlist?list=PLVUliVBcvz1lKS9-rcPFFXkwGOj_YX_-5" target="_blank">YouTube</a>.</p>
+</div>
+
+  <footer id="footer">
+    <p class="small" style="padding:20px;">© Copyright 2024 Addy Osmani</p>
+</footer>
+
+  
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46754295-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+
+</body></html>
